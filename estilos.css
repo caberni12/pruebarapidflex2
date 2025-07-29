@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 .modal {
   display: none;
@@ -110,7 +111,7 @@
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      height: 10%;
+      height: 8%;
     }
 
     .nav-logo img {
@@ -126,7 +127,7 @@
     }
 
     .nav-links a {
-      padding: 8px 16px;
+      padding: 6px 12px;
       background-color: #0044cc;
       color: white !important;
       font-size: 1rem;
@@ -134,8 +135,9 @@
       border-radius: 50px;
       text-decoration: none;
       transition: background-color 0.3s ease;
-      zoom: 90%;
-      margin-top: -16px;
+      zoom: 85%;
+      margin-top: -32px;
+      
     }
 
     .nav-links a:hover {
@@ -147,13 +149,15 @@
       position: absolute;
       left: 20px;
       right: 20px;
-      color: white;
+      color: #ffffff;
       max-width: 600px;
+     ;
     }
 
     .hero-text h1 {
       font-size: 3rem;
       margin-bottom: 10px;
+      padding: -10px;
     }
 
     .hero-text p {
@@ -164,9 +168,8 @@
 
     .btn-cotiza {
       display: inline-block;
-      margin-top: 20px;
-      padding: 25px 50px;
-      font-size: 1.7rem;
+      padding: 10px 20px;
+      font-size: 1.1rem;
       color: #051df78c;
       background-color: #00d1b2;
       border: none;
@@ -174,6 +177,8 @@
       text-decoration: none;
       font-weight: bold;
       transition: all 0.3s ease;
+      margin-top: 65px;
+      margin-left: 60px;
     }
 
     .btn-cotiza:hover {
@@ -233,8 +238,8 @@
     }
 
     .redes-sociales img {
-      width: 80px;
-      height: 80px;
+      width: 40px;
+      height: 40px;
       object-fit: contain;
       background: none;
       border: none;
