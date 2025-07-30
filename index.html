@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RapidFlex - Entregas de Última Milla</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
   <link href="estilos.css" rel="stylesheet" />
 </head>
 <body>
@@ -15,7 +17,7 @@
       </div>
       <div class="nav-links">
         <a href="#">Servicios</a>
-        <a href="#">Quiero despachar</a>
+        <a href="javascript:void(0)" class="btn-cotiza" onclick="openModal('modalEmpresa')">Quiero despachar</a>
         <a href="javascript:void(0)" onclick="openModal('modalRepartidor')">Quiero ser repartidor</a>
         <a href="#">Nosotros</a>
       </div>
@@ -47,6 +49,106 @@
       <p>Puntos estratégicos para facilitar tu logística. Tú eliges dónde retirar.</p>
     </div>
   </section>
+
+  <section class="seccion-telefono">
+    <div class="contenido-telefono">
+      <h2>Seguimiento para tus envíos</h2>
+      
+      <div>
+        <p>
+              Con nuestra plataforma de seguimiento en 
+          <span class="destacar"><strong>tiempo real</strong></span>, ves cada<br>
+          movimiento de tu pedido: desde la recogida hasta la entrega final.
+        </p>
+      </div>
+      
+        
+      
+      
+      
+      
+      <div class="item-con-icono">
+        <img class="icono" src="localizacion.png" alt="Localizacion">
+        <p>Geolocalización precisa del recorrido del paquete</p>
+      </div>
+      <div class="item-con-icono">
+        <img class="icono" src="etapas.png" alt="Etapas">
+        <p>Actualización de cada etapa</p>
+      </div>
+      <div class="item-con-icono">
+        <img class="icono" src="integracion.png" alt="Integración">
+        <p>Integración directa con Mercado Libre</p>
+      </div>
+    </div>
+    <div class="imagen-telefono">
+      <img src="telefono-mapa.png" alt="Teléfono">
+    </div>
+  </section>
+
+  <section class="seccion-seguridad">
+    <div class="contenido-seguridad">
+      <h2>Tu tranquilidad garantizada</h2>
+      <div>
+        <p>
+          <span class="linea1">En Rapid Flex <strong>cuidamos cada entrega como propia.</strong></span>
+          <span class="linea2">Si algo no sale bien, cuentas con nuestro respaldo inmediato.</span>
+        </p>
+      </div>
+      <section class="seccion-siguiente">
+        
+      </section>
+     
+      <div class="item-con-icono">
+        <img class="icono" src="peso.png" alt="Reembolso asegurado">
+        <p>Reembolso asegurado hasta $100.000 en máximo 5 días hábiles</p>
+      </div>
+      <div class="item-con-icono">
+        <img class="icono" src="humano.png" alt="Atención humana">
+        <p>Atención humana directa ante imprevistos</p>
+      </div>
+    </div>
+    <div class="imagen-cajas">
+      <img src="cajas-seguras.png" alt="Cajas protegidas" />
+    </div>
+  </section>
+
+
+  <!-- Sección Marketplaces -->
+  <section class="seccion-marketplaces">
+    <h2>¿Vendes en estos marketplaces?</h2>
+    <h3>¡Entregamos por ti!</h3>
+    <p>Integramos Rapid Flex con tus canales de venta favoritos para que entregues más rápido, sin complicarte.</p>
+  </section>
+
+<!-- Sección Integraciones -->
+<section class="seccion-integraciones">
+  <div class="integraciones-container">
+    <button class="integracion-btn">
+      <img src="mercadolibre.png" alt="Mercado Libre">
+    </button>
+    <button class="integracion-btn">
+      <img src="shopify.png" alt="Shopify">
+    </button>
+    <button class="integracion-btn">
+      <img src="walmart.png" alt="walmart">
+    </button>
+    <button class="integracion-btn">
+      <img src="ripley.png" alt="Riplay">
+    </button>
+    <button class="integracion-btn">
+      <img src="falabella.png" alt="falabella">
+    </button>
+    <button class="integracion-btn">
+      <img src="jumpseller.png" alt="jumpseller">
+    </button>
+    <button class="integracion-btn">
+      <img src="paris.png" alt="paris">
+    </button>
+
+    <!-- Añade más integraciones según tus logos -->
+  </div>
+</section>
+
 
   <footer>
     RapidFlex &copy; 2025 - Todos los derechos reservados

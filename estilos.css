@@ -79,8 +79,10 @@
 }
 
     * {
+      
       box-sizing: border-box;
       font-family: 'Open Sans', sans-serif;
+      
       margin: 0;
       padding: 0;
     }
@@ -111,13 +113,13 @@
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      height: 8%;
+      height: 7%;
     }
 
     .nav-logo img {
       width: 100px;
-      height: auto;
-      margin-top: -20px;
+      height: 80px;
+      margin-top: -25px;
     }
 
     .nav-links {
@@ -130,15 +132,24 @@
       padding: 6px 12px;
       background-color: #0044cc;
       color: white !important;
-      font-size: 1rem;
+      font-size: 1.1rem;
       font-weight: bold;
       border-radius: 50px;
       text-decoration: none;
       transition: background-color 0.3s ease;
-      zoom: 85%;
-      margin-top: -32px;
+      zoom: 70%;
+      margin-top: -37px;
+      margin-left: -15px;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
       
+      /* AÑADIDOS para centrar el texto */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
+    
 
     .nav-links a:hover {
       background-color: #0033aa;
@@ -151,19 +162,25 @@
       right: 20px;
       color: #ffffff;
       max-width: 600px;
-     ;
+     
     }
 
     .hero-text h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-      padding: -10px;
+      font-size: 2.5rem;
+      margin-bottom: 2px;
+      line-height: 1.1; /* más compacto entre líneas */
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
     }
+    
 
     .hero-text p {
       font-size: 1.5rem;
-      color: #00d1b2;
+      color: #00d1b2fd;
       font-weight: bold;
+      box-sizing: border-box;
+      font-family: 'Open Sans', sans-serif;
+      margin-top: 40px;
     }
 
     .btn-cotiza {
@@ -188,39 +205,45 @@
 
     .servicios {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      padding: 40px 20px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: -300px; /* Menor separación entre tarjetas */
+      padding: 10px;
       background-color: #ffffff;
       max-width: 1200px;
       margin: 0 auto;
+      justify-content: center;
     }
-
+    
     .servicio {
-      background: #ffffff;
+      background: #f5f5f5; /* Fondo gris del cuadrado */
       padding: 15px;
       border-radius: 12px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
       text-align: center;
+      width: 100%;
+      max-width: 280px;
+      height: 200px;
+      margin: 0 auto;
     }
-
+    
     .servicio img {
-      width: 90px;
-      height: 90px;
-      margin-bottom: 10px;
+      width: 105px;
+      height: 105px;
+      margin-bottom: -28px;
     }
-
+    
     .servicio h2 {
-      font-size: 1.1rem;
-      margin-bottom: 5px;
+      font-size: 1.5rem;
+      margin-bottom: 3px;
+      font-family: 'Poppins', sans-serif;
     }
-
+    
     .servicio p {
       font-size: 0.9rem;
       line-height: 1.4;
       font-weight: bold;
     }
-
+    
     footer {
       text-align: center;
       padding: 30px 20px;
@@ -274,56 +297,322 @@
       transform: scale(1.1);
     }
 
-    @media screen and (max-width: 768px) {
-      .hero-text {
-        top: 260px;
-        text-align: left;
-      }
-    
-      .hero-text h1 {
-        font-size: 1.3rem;
-        margin-bottom: 10px;
-      }
-    
-      .hero-text p {
-        font-size: 1.1rem;
-        color: #00d1b2;
-        font-weight: bold;
-        margin-bottom: 25px;
-      }
-    
-      .btn-cotiza {
-        font-size: 1.5rem;
-        padding: 20px 40px;
-        margin-top: 20px;
-        display: inline-block;
-      }
-    
-      .nav-links {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
-        gap: 16px;
-        width: 100%;
-        justify-content: center;
-        margin-top: 30px;
-        padding: 0 20px;
-      }
-    
-      .nav-links a {
-        background-color: #0314fd; /* Fondo negro */
-        color: white !important;
-        font-weight: bold;
-        text-align: center;
-        padding: 14px 12px;
-        font-size: 1rem;
-        border-radius: 50px; /* estilo pill */
-        width: 100%;
-        box-sizing: border-box;
-        display: block;
-      }
-    
-      .nav-links a:hover {
-        background-color: #333;
-      }
-    }
-    
+    .seccion-telefono,
+.seccion-seguridad {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px 5%;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contenido-telefono,
+.contenido-seguridad {
+  max-width: 500px;
+  flex: 1 1 480px;
+}
+
+.contenido-telefono h2,
+.contenido-seguridad h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0072ff; /* Títulos en azul */
+  margin-bottom: 20px;
+}
+
+.item-con-icono {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.item-con-icono .icono {
+  width: 48px;
+  height: 48px;
+}
+
+.item-con-icono p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  font-weight: 700; /* Texto en negritas */
+}
+
+.imagen-telefono,
+.imagen-cajas {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.imagen-telefono img,
+.imagen-cajas img {
+  max-width: 200%;
+  height: auto;
+  margin: 0 auto;
+  margin-left: -700px;
+  margin-top: -75px;
+}
+
+
+
+
+
+/* Sección Marketplaces - estilo PDF exacto */
+.seccion-marketplaces {
+  padding: 60px 5%;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.seccion-marketplaces h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0072ff; /* azul */
+  margin-bottom: 8px;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+}
+
+.seccion-marketplaces h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00d1b2fd; /* verde */
+  margin-bottom: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+}
+
+.seccion-marketplaces p {
+  font-size: 0.95rem;
+  font-weight: 700; /* negrita */
+  color: #101010; /* negro oscuro */
+  line-height: 1.6;
+  max-width: 680px;
+  margin: 0 auto;
+
+  white-space: nowrap;
+  max-width: none;
+
+
+}
+
+
+.linea1 {
+  display: block;
+  margin-bottom: 0.0rem; /* separa la primera línea del resto */
+}
+
+.linea2 {
+  display: block;
+  margin-top: 0.0rem;    /* opcional: añade un poco de “aire” por encima */
+}
+
+.destacar {
+  font-weight: 700 !important;
+}
+
+.seccion-siguiente {
+  margin-top: 2rem;
+}
+
+/* ========== Sección Integraciones ========== */
+
+.seccion-integraciones {
+  padding: 60px 5%;
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: -100px;
+}
+
+.seccion-integraciones h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #101010;
+  margin-bottom: 30px;
+}
+
+/* Contenedor de logos de integraciones */
+.integraciones-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Botón de cada integración */
+.integracion-btn {
+  background: transparent;
+  border: 2px solid transparent;
+  padding: 12px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Efecto hover y focus: muestra el borde y un ligero levantamiento */
+.integracion-btn:hover,
+.integracion-btn:focus {
+  transform: translateY(-2px);
+  border-color: #0072ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Estado activo: borde visible permanentemente */
+.integracion-btn.active {
+  border-color: #0072ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen dentro del botón */
+.integracion-btn img {
+  display: block;
+  max-height: 150px;
+  width: auto;
+}
+
+/* ===== Responsive Tablets (<= 768px) ===== */
+@media (max-width: 768px) {
+  /* Nav pasa a columna */
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    margin-top: 10px;
+    gap: 10px;
+  }
+
+  /* Hero ajusta tamaño y posición */
+  .hero-text {
+    top: 120px;
+    left: 5%;
+    right: 5%;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .hero-text p {
+    font-size: 1.25rem;
+    margin-top: 20px;
+  }
+  .btn-cotiza {
+    margin: 30px 0 0 0;
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  /* Servicios más estrechos */
+  .servicios {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px 5%;
+  }
+  .servicio {
+    max-width: 220px;
+  }
+  .servicio img {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* Teléfono y Seguridad apilados */
+  .seccion-telefono,
+  .seccion-seguridad {
+    flex-direction: column;
+    padding: 40px 5%;
+    gap: 20px;
+  }
+  .imagen-telefono img,
+  .imagen-cajas img {
+    max-width: 90%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  /* Marketplaces en dos líneas si hace falta */
+  .seccion-marketplaces h2 {
+    font-size: 2rem;
+  }
+  .seccion-marketplaces h3 {
+    font-size: 1.75rem;
+  }
+  .seccion-marketplaces p {
+    white-space: normal;
+    font-size: 0.9rem;
+    max-width: 90%;
+  }
+
+  /* Integraciones con logos más pequeños */
+  .integraciones-container {
+    gap: 20px;
+  }
+  .integracion-btn img {
+    max-height: 50px;
+  }
+
+  /* Modal y Whatsapp */
+  .modal-content {
+    width: 95%;
+    padding: 20px;
+  }
+  .whatsapp-float {
+    width: 60px;
+    height: 60px;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+/* ===== Responsive Móviles (<= 480px) ===== */
+@media (max-width: 480px) {
+  /* Titulares más pequeños */
+  .hero-text h1 {
+    font-size: 1.75rem;
+  }
+  .hero-text p {
+    font-size: 1.1rem;
+  }
+
+  /* Botón cotiza compacto */
+  .btn-cotiza {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  /* Iconos de lista más pequeños */
+  .item-con-icono {
+    gap: 10px;
+  }
+  .item-con-icono .icono {
+    width: 36px;
+    height: 36px;
+  }
+  .item-con-icono p {
+    font-size: 0.9rem;
+  }
+
+  /* Marketplaces aún más compacto */
+  .seccion-marketplaces {
+    padding: 40px 5%;
+  }
+  .seccion-marketplaces h2 {
+    font-size: 1.75rem;
+  }
+  .seccion-marketplaces h3 {
+    font-size: 1.5rem;
+  }
+  .seccion-marketplaces p {
+    font-size: 0.85rem;
+  }
+
+  /* Footer y redes compacto */
+  footer {
+    padding: 20px 5%;
+    font-size: 0.9rem;
+  }
+}
